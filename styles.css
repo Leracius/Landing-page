@@ -1,0 +1,123 @@
+body {
+   background-image: url(./asets/landing\ image.gif);
+   background-size: cover;
+   background-repeat: no-repeat;
+   background-color: linear-gradient ;
+
+}
+
+@media only screen and (max-width: 500px) {
+    body {
+        background-image: url(./asets/landing-image-mobile.gif);
+        background-repeat: no-repeat;
+        margin: 0;
+        padding: 0;
+        margin-bottom: 100px;
+        
+    }
+    .main-container {
+
+        display: flex;
+        flex-direction: column-reverse;
+        text-align: justify;
+        height: max-content;
+       
+    }
+    .freud {
+        display: flex;
+        width: 100%;
+        justify-content: center;
+
+    }
+
+    .botonerapadre {
+        margin-bottom: 20px;
+    }
+    .boton {
+        width: 100%;
+    }
+
+}
+.header {
+    display: flex;
+    background:rgba(0, 0, 0, 0)
+
+}
+.info {
+    display: flex;
+    width: 95%;
+    justify-content: right;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    
+}
+.info-hijo {
+    margin-right: 20px;
+    font-size: 0.75em;
+    font-family: 'Space Mono', monospace;
+    font-weight: bold;
+    
+}
+
+.main-container {
+    background-color: rgba(0, 0, 0, 0.637);
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    font-family: 'Space Mono', monospace;
+    color: cornsilk;
+   
+}
+.child-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+.botonerapadre {
+    width: 100%;
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	gap: 40px;
+}
+
+
+.boton {
+    font-family: 'Space Mono', monospace;
+    display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	width: 60%;
+	height: 40px;
+	background: #141414;
+	color: #fff;
+	font-size: 12px;
+	font-weight: 500;
+	border: none;
+	cursor: pointer;
+	text-transform: uppercase;
+	transition: .3s ease all;
+	border-radius: 5px;
+	position: relative;
+	overflow: hidden;
+}
+.boton span {
+	position: relative;
+	z-index: 2;
+	transition: .3s ease all;
+}
+.boton::after {
+	content: "";
+	width: 100%;
+	height: 100%;
+	background: linear-gradient(to right, #de6161, #2657eb);
+	position: absolute;
+	z-index: 1;
+	top: -80px;
+	left: 0;
+	transition: .3s ease-in-out all;
+}
+
+.boton:hover::after {
+	top: 0;
+}
