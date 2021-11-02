@@ -1,15 +1,13 @@
 body {
    background-image: url(./asets/landing\ image.gif);
-   background-size: cover;
-   background-repeat: no-repeat;
-   background-color: linear-gradient ;
+   background-repeat: repeat; 
 
 }
 
 @media only screen and (max-width: 500px) {
     body {
         background-image: url(./asets/landing-image-mobile.gif);
-        background-repeat: no-repeat;
+        background-repeat: repeat;
         margin: 0;
         padding: 0;
         margin-bottom: 100px;
@@ -109,6 +107,8 @@ body {
         }
   }
 
+  /* segundo div de footer */
+
 .info {
     display: flex;
     width: 95%;
@@ -124,6 +124,8 @@ body {
     font-weight: bold;
     
 }
+
+ /* primer contenedor */
 
 .main-container {
     background-color: rgba(0, 0, 0, 0.637);
