@@ -40,7 +40,75 @@ body {
     display: flex;
     background:rgba(0, 0, 0, 0)
 
+
+
 }
+
+/*logo cubo  */
+.cube-contain{
+    
+    position: absolute;
+    perspective: 800px;
+    padding-left: 40px;
+    padding-top: 30px;
+  
+  }
+  
+  .cubo {
+      position: relative;
+      transform-style: preserve-3d;
+      animation-name: rotate;
+      animation-duration: 10s;
+      animation-timing-function: linear;
+      animation-iteration-count: infinite;
+      
+  }
+  
+  .side {
+    position: absolute;
+    width: 60px;
+    height: 60px;
+  
+  }
+  .front {
+      transform: translateX(-30px) translateY(-30px) translateZ(30px);
+      
+  }
+  
+  .top {
+      transform: translateX(-30px) translateY(-60px) rotateX(90deg);
+      
+  } 
+  
+  .right {
+      transform: translateY(-30px) rotateY(90deg);
+    
+  }
+  
+  .left {
+      transform: translateY(-30px) translateX(-60px) rotateY(90deg);
+     
+  }
+  .bottom {
+      transform: translateX(-30px) rotateX(90deg);
+     
+  }
+  
+  .back {
+      transform: translateX(-30px) translateY(-30px) translateZ(-30px);
+      
+  }
+  
+  
+  @keyframes rotate {
+      0% {
+          transform: rotateY(0deg);
+        }
+      100% {
+          transform: rotateY(360deg);
+        }
+  }
+
 .info {
     display: flex;
     width: 95%;
