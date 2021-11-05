@@ -5,7 +5,7 @@ body {
 
 }
 
-@media only screen and (max-width: 450px) {
+@media only screen and (max-width: 500px) {
     body {
         background-image: url(./asets/landing-image-mobile.gif);
         background-repeat: repeat;
