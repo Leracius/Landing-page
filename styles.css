@@ -5,7 +5,7 @@ body {
 
 }
 
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 375px) {
     body {
         background-image: url(./asets/landing-image-mobile.gif);
         background-repeat: repeat;
@@ -18,6 +18,10 @@ body {
     .botondes{
         display: flex;
         flex-direction: column;
+    }
+
+    .dropdown {
+        width: 100%;
     }
     .main-container, .second-container {
 
@@ -158,7 +162,6 @@ body {
 .dropdown {
   position: relative;
   display: inline-block;
-  width: 16.66%;
 }
 
 .dropdown-content {
