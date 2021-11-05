@@ -14,13 +14,11 @@ body {
         margin-bottom: 100px;
         
     }
-    .botondes{
-        grid-template-columns: 100%;
-    }
-    .dropdown {
-        grid-column: 1/2;
-    }
     
+    .botondes{
+        display: flex;
+        flex-direction: column;
+    }
     .main-container, .second-container {
 
         display: flex;
@@ -140,8 +138,7 @@ body {
 /* Style The Dropdown Button */
 
 .botondes {
-    display: grid;
-    grid-template-columns: repeat(3, 16.66%);
+    display: flex;
     width: 100%;
 	background: #141414;
 }
@@ -161,6 +158,7 @@ body {
 .dropdown {
   position: relative;
   display: inline-block;
+  width: 16.66%;
 }
 
 .dropdown-content {
@@ -209,6 +207,7 @@ body {
     justify-content: space-between;
     font-family: 'Space Mono', monospace;
     color: cornsilk;
+    margin-bottom: 2em;
    
 }
 .child-container {
@@ -216,6 +215,7 @@ body {
     flex-direction: column;
     justify-content: center;
     text-align: center;
+    margin: 1em;
 }
 .botonerapadre {
     width: 100%;
@@ -275,6 +275,7 @@ body {
     font-family: 'Space Mono', monospace;
     color: cornsilk;
     padding-bottom: 20px;
+    margin-bottom: 2em;
     
 }
 .second-child-cont {
@@ -282,6 +283,8 @@ body {
     flex-direction: column;
     justify-content: center;
     text-align: center;
+    margin: 1em;
+
 
 }
 .laberinto {
