@@ -1,61 +1,26 @@
 body {
-   background-image: url(./asets/landing\ image.gif);
-   background-repeat: repeat; 
-   margin: 0;
-
+    background: black;
+    margin: 0;
+    margin-bottom: 100px;
 }
 
-@media only screen and (max-width: 500px) {
-    body {
-        background-image: url(./asets/landing-image-mobile.gif);
-        background-repeat: repeat;
-        margin: 0;
-        padding: 0;
-        margin-bottom: 100px;
+
+
         
-    }
-    
-    .botondes{
-        display: flex;
-        flex-direction: column;
-    }
 
-    .dropdown {
-        width: 100%;
-    }
-    .main-container, .second-container {
-
-        display: flex;
-        flex-direction: column-reverse;
-        text-align: justify;
-        height: max-content;
-       
-    }
-    .freud, .laberint {
-        display: flex;
-        width: 100%;
-        justify-content: center;
-
-    }
-
-    .botonerapadre {
-        margin-bottom: 20px;
-    }
-    .boton {
-        padding: 2.5em;
-    }
- 
-   
-}
 .header {
     display: flex;
-    background: #586994;
+    justify-content: space-between;
+    background-color: black;
     margin-right: 0;
     margin-left: 0;
     height: 6em;
 
 
 
+}
+.name-axel {
+    justify-self: center;
 }
 
 
@@ -142,9 +107,11 @@ body {
 /* Style The Dropdown Button */
 
 .botondes {
-    display: flex;
+    
     width: 100%;
 	background: #141414;
+    display: flex;
+    justify-content: flex-end;
 }
 
 .dropbtn {
@@ -161,7 +128,8 @@ body {
 
 .dropdown {
   position: relative;
-  display: inline-block;
+  width: 15%;
+  flex-direction: row;
 }
 
 .dropdown-content {
@@ -184,18 +152,18 @@ body {
 }
 .dropdown-content a:hover {
 
-    background: linear-gradient(to right, #de6161, #2657eb)
+    background: red;
 
 }
 
 .dropdown:hover .dropdown-content {
     display: block;
-    background-color: linear-gradient(to right, #de6161, #2657eb);
+    background-color: linear-gradient(to bottom, #ff0000, #000000);
     z-index: 3;
  } 
 
 .dropdown:hover .dropbtn {
-  background: linear-gradient(to right, #de6161, #2657eb);
+  background: rgb(128, 1, 1);
 }
 
 
@@ -307,3 +275,46 @@ body {
     height: 200px;
 }
 
+@media only screen and (max-width: 500px) {
+    .header {
+        flex-direction: column;
+    }
+    .name-axel {
+        margin-bottom: 2em;
+    }
+    .botondes {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+
+    }
+    .dropdown {
+        width: 50%;
+    }
+    .botonerapadre {
+        margin-bottom: 20px;
+    }
+    .boton {
+        padding: 2.5em;
+        width: 100%;
+    }
+    .freud, .laberint {
+        display: flex;
+        width: 100%;
+        justify-content: center;
+
+    }
+    .name-axel{
+        display: none;
+    }
+    .main-container, .second-container {
+
+        display: flex;
+        flex-direction: column-reverse;
+        text-align: justify;
+        height: max-content;
+       
+    }
+    
+
+}
