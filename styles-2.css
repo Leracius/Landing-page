@@ -40,9 +40,19 @@ body {
     left: 1000px;
     top: 110px;
     animation-name: moving;
-    animation-duration: 5.3s;
+    animation-duration: 3s;
     animation-timing-function: linear;
     animation-iteration-count: initial;
+}
+@keyframes moving{
+    0% {
+        left: -500px;
+    }
+    
+    100% {
+        left: -150px;
+    }
+
 }
 .back {
     width: 60px;
@@ -68,7 +78,7 @@ body {
     width: 300px;
     font-family: 'Barlow Semi Condensed', sans-serif;
     color: white;
-    animation-name: talking;
+    animation-name: cloud;
     animation-duration: 550s;
     background-color: black;
     z-index: -50;
@@ -76,6 +86,14 @@ body {
     border-radius: 10px;
   
     
+}
+@keyframes cloud {
+    0% {
+        z-index: -50;
+    }
+    1.85%, 100% {
+        z-index: 50;
+    }
 }
 .text::after {
     content: "";
@@ -89,14 +107,7 @@ body {
     left: 110px;
 }
 
-@keyframes talking {
-    0% {
-        z-index: -50;
-    }
-    3.5%, 100% {
-        z-index: 50;
-    }
-}
+
 p {
     margin: 1em;
     font-family: 'Barlow Semi Condensed', sans-serif;
@@ -131,26 +142,17 @@ p {
     0% { 
         z-index: -30;
     }
-    3.5%, 100% {
+    1.9%, 100% {
         z-index: 30;
     }
 }
 
-@keyframes moving{
-    0% {
-        left: -800px;
-    }
-    
-    100% {
-        left: -150px;
-    }
 
-}
 @keyframes go {
     0% {
         z-index: -10;
     }
-    12%, 100% {
+    6%, 100% {
         z-index: 60;
     }
 
