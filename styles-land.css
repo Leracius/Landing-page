@@ -422,9 +422,12 @@ body {
 /*media querys */
 
 @media only screen and (max-width: 500px) {
+    .psico-world {
+        margin-top: 2em;
+        width: 200px;
+    }
     .name-axel {
-        margin-bottom: 2em;
-        margin-right: 1em;
+       margin: 0;
     }
     .navbar {
         display: flex;
@@ -457,11 +460,7 @@ body {
     .botonera {
         width: 49%;
     }
-    .name-axel{
-        margin-top: 30px;
-        margin-left: 100px;
-        width: 200px;
-    }
+    
     .main-container, .second-container {
 
         display: flex;
