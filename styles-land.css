@@ -15,11 +15,12 @@ body {
     margin-right: 0;
     margin-left: 0;
     height: 6em;
+    width: 100%;
 
 
 
 }
-.name-axel {
+.psico-world {
     margin-top: 1em;
 }
 
@@ -39,13 +40,14 @@ body {
       position: relative;
       transform-style: preserve-3d;
       animation-name: rotate;
-      animation-duration: 10s;
+      animation-duration: 5s;
       animation-timing-function: linear;
       animation-iteration-count: infinite;
       
   }
   .cubo div {
-      border: 4px solid black;
+      border:2px solid rgb(255, 0, 0);
+      box-shadow: 0 0 5px 0 rgb(255, 0, 0);   
   }
   .side {
     position: absolute;
@@ -101,6 +103,7 @@ body {
     display: flex;
     justify-content: flex-end;
     border-bottom: 5px solid red;
+    
 }
 
 .dropbtn {
@@ -143,6 +146,7 @@ body {
 .dropdown-content a:hover {
 
     background: red;
+    box-shadow: 0 0 10px 0 rgb(255, 0, 0);   
 
 }
 
@@ -154,8 +158,95 @@ body {
 .dropdown:hover .dropbtn {
   background: rgb(128, 1, 1);
 }
+/*MAIN*/
 
+.card-main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 0 20px 0 20px;
+    height: 220px;
+    background-color: #242424;
 
+}
+.scroll {
+    display: flex;
+    justify-content: center;
+}
+.compra {
+    display: flex;
+    justify-content: center;
+    background-color: #141414;
+    margin: 20px 20px 0 20px;
+    font-family: "nunito";
+    color: #ffffff;
+    font-size: 24px;
+    border-bottom: 3px solid red;
+
+}
+
+.card {
+    position: relative;
+    width: 150px;
+    height: 200px;
+    min-width: 150px;
+    min-height: 200px;
+    margin: 10px;
+}
+.card div {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    backface-visibility: hidden;
+    transition: 1s;
+}
+.front-card {
+    background-size: cover;
+    transform: perspective(500px) rotateY(0deg);
+    border-radius: 5px;
+}
+
+.back-card {
+    background: #a08e28;
+    transform: perspective(500px) rotateY(180deg);
+    border-radius: 5px;
+    background-size: cover;
+}
+
+.card:hover .front-card {
+    transform: perspective(500px) rotateY(180deg);
+}
+.card:hover .back-card {
+    transform: perspective(500px) rotateY(360deg);
+}
+/* CARDS Nº: the class name "f" is for front, "b" for back and number is for the number of card */
+.f-1 {
+    background-image: url(https://i.pinimg.com/736x/16/bd/b5/16bdb53e088470ab1b1dfe4ed4cd3d22.jpg);
+}
+
+.f-2 {
+    background-image: url(https://i.pinimg.com/564x/dc/9f/f4/dc9ff466f4f4cf0bb79eac6ffbfebfd5.jpg);
+}
+
+.f-3 {
+    background-image: url(https://i.pinimg.com/736x/3d/c0/f8/3dc0f8f4fb05892b715cee5b90810529.jpg);
+}
+
+.f-4 {
+    background-image: url(https://i.pinimg.com/736x/82/42/5e/82425e583d323c9053ba4a295ca199c2.jpg);
+}
+
+.f-5 {
+    background-image: url(https://i.pinimg.com/564x/7f/f5/7f/7ff57f6d439e495f245e97042b814509.jpg);
+}
+
+.f-6 {
+    background-image: url(https://i.pinimg.com/736x/46/bf/bd/46bfbd7aa979432481e96e92ee608910.jpg);
+}
 /*ARTICLE*/
 
 .article {
@@ -169,7 +260,7 @@ body {
     display: flex;
     width: 32%;
     justify-content: space-between;
-    font-family: 'Nunito', sans-serif;
+    font-family: 'Nunito';
     color: cornsilk;
     border-bottom: 4px solid red;
    
@@ -214,7 +305,7 @@ body {
 }
 .boton {
 
-    font-family: 'Nunito', sans-serif;
+    font-family: 'Nunito';
     display: inline-flex;
 	align-items: center;
 	justify-content: center;
@@ -252,6 +343,82 @@ body {
 	top: 0;
 }
 
+/*footer*/
+
+
+.seccion-1 {
+    border-top: 4px solid red;
+    width: 100%;
+    height: 130px;
+    background: #141414;
+    font-family:'Nunito';
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10px;
+}
+.seccion-1 h1 {
+    font-size: 16px;
+    color: gainsboro;
+    text-align: center;
+}
+
+
+.icons {
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    height: 32px;
+    cursor: pointer;
+}
+
+.seccion-2 {
+    color: #ffffff;
+    width: 100%;
+    background:#242424;
+    height: 50px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.seccion-2 p {
+    font-family: "Nunito";
+    margin: 0;
+}
+.send {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    width: 30%;
+}
+.tyc {
+    display: flex;
+    font-family: "Nunito";
+    font-size: 14px;
+}
+.tyc input {
+    width: 20px;
+}
+.send input {
+    background: #ffffff;
+    border: 2px solid #141414;
+    height: 20px;
+    width: 200px;
+}
+.send button {
+    border: none;
+    background: #141414;
+    color: white;
+    height: 26px;
+    padding: 5px;
+}
+.send button:hover {
+    background: red;
+}
+  
+    
+
 /*media querys */
 
 @media only screen and (max-width: 500px) {
@@ -267,6 +434,11 @@ body {
     }
     .dropdown {
         width: 50%;
+
+    }
+    .scroll {
+        width: 1000px;
+        overflow-x: scroll;
     }
     .article {
         flex-direction: column;
@@ -299,5 +471,9 @@ body {
        
     }
     
+    .seccion-2 {
+        flex-direction: column;
+        height: 100px;
+    }
 
 }
