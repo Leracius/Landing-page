@@ -230,9 +230,10 @@ body {
 .back-card p {
     font-size: 14px;
     color: #ff0000;
-    margin: 0 0 5px 0;
+    margin: 0 0 10px 0;
 }
 .back-card button {
+    margin-top: 10px;
     border: none;
     background: #242424;
     color: #ffffff;

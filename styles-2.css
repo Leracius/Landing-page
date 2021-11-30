@@ -135,7 +135,7 @@ p {
     font-size: 18px;
     cursor: pointer; 
     font-family: 'Barlow Semi Condensed', sans-serif;
-   
+    outline: none;
 
 }
 @keyframes talk {
