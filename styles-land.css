@@ -1,12 +1,12 @@
 body {
-    background: black;
+    background: #000000;
     margin: 0;
 }
 
 .header {
     display: flex;
     justify-content: space-between;
-    background-color: black;
+    background-color: #000000;
     margin-right: 0;
     margin-left: 0;
     height: 100px;
@@ -41,8 +41,8 @@ body {
       
   }
   .cubo div {
-      border:2px solid rgb(255, 0, 0);
-      box-shadow: 0 0 5px 0 rgb(255, 0, 0);   
+      border:2px solid #ff0000;
+      box-shadow: 0 0 5px 0 #ff0000;   
   }
   .side {
     position: absolute;
@@ -98,7 +98,7 @@ body {
 	background: #141414;
     display: flex;
     justify-content: flex-end;
-    border-bottom: 5px solid red;
+    border-bottom: 5px solid #ff0000;
     
 }
 
@@ -106,7 +106,7 @@ body {
 
     font-family: 'Nunito', sans-serif;
 	background: #141414;
-    color: white;
+    color: #ffffff;
     padding: 16px;
     font-size: 16px;
     border: none;
@@ -123,14 +123,14 @@ body {
 .dropdown-content {
     font-family: 'Nunito', sans-serif;
     display: none;
-    color: white;
+    color: #ffffff;
     position: absolute;
     background-color: #242424;
     min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    box-shadow: 0px 8px 16px 0px #00000033;
     z-index: 1;
     width: 100%;
-    box-shadow: 1px 1px 20px black;
+    box-shadow: 1px 1px 20px #000000;
 }
 
 .dropdown-content a {
@@ -141,8 +141,8 @@ body {
 }
 .dropdown-content a:hover {
 
-    background: red;
-    box-shadow: 0 0 10px 0 rgb(255, 0, 0);   
+    background: #ff0000;
+    box-shadow: 0 0 10px 0 #ff0000;   
 
 }
 
@@ -152,7 +152,7 @@ body {
  } 
 
 .dropdown:hover .dropbtn {
-  background: rgb(128, 1, 1);
+  background: #800101;
 }
 
 /*Scrolling fliping cards*/
@@ -163,18 +163,17 @@ body {
     align-items: center;
     text-align: center;
     margin: 0 20px 0 20px;
-    height: 220px;
+    height: 250px;
     background-color: #242424;
 
 }
 .scroll {
     overflow-x: scroll;
     width: 100%;
-    padding: 10px;
     display: flex;
-    justify-content: center;
+    justify-content: start;
 }
-.compra {
+.galery {
     padding: 10px 0 10px 0;
     display: flex;
     justify-content: center;
@@ -183,7 +182,7 @@ body {
     font-family: "nunito";
     color: #ffffff;
     font-size: 24px;
-    border-bottom: 3px solid red;
+    border-bottom: 3px solid #ff0000;
 
 }
 
@@ -216,9 +215,35 @@ body {
     transform: perspective(500px) rotateY(180deg);
     border-radius: 5px;
     background-size: cover;
-    border-bottom: 3px solid red;
+    border-bottom: 3px solid #ff0000;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    font-family: "nunito";
+    color: #ffffff;
 }
-
+.back-card h2 {
+    height: 25%;
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+.back-card p {
+    font-size: 14px;
+    color: #ff0000;
+    margin: 0 0 5px 0;
+}
+.back-card button {
+    border: none;
+    background: #242424;
+    color: #ffffff;
+    height: 26px;
+    padding: 5px;
+    width: 80%;
+}
+.back-card button:hover {
+    background: #ff0000;
+}
+  
 .card:hover .front-card {
     transform: perspective(500px) rotateY(180deg);
 }
@@ -228,9 +253,6 @@ body {
 /* CARDS Nº: the class name "f" is for front, "b" for back and number is for the number of card */
 .f-1 {
     background-image: url(https://i.pinimg.com/736x/16/bd/b5/16bdb53e088470ab1b1dfe4ed4cd3d22.jpg);
-}
-.b-1 {
-
 }
 
 .f-2 {
@@ -260,6 +282,8 @@ body {
 .f-8 {
     background-image: url(https://i.pinimg.com/736x/25/a2/09/25a20925eaabde205160df592b119292.jpg);
 }
+
+
 /*ARTICLE*/
 
 .article {
@@ -271,11 +295,11 @@ body {
 .card-container {
     background-color: #242424;
     display: flex;
-    width: 32%;
+    width: 33.3%;
     justify-content: space-between;
     font-family: 'Nunito';
-    color: cornsilk;
-    border-bottom: 4px solid red;
+    color: #fff8dc;
+    border-bottom: 4px solid #ff0000;
    
 }
 .child-container {
@@ -304,7 +328,8 @@ body {
     background-image: url(./asets/complejo-de-edipo-1_opt.jpg);
 }
 .text-card {
-    min-height: 300px;
+    min-height: 150px;
+    max-height: 700px;
 }
 .botonerapadre {
     display: flex;
@@ -344,7 +369,7 @@ body {
 	content: "";
 	width: 100%;
 	height: 100%;
-	background: red;
+	background: #ff0000;
 	position: absolute;
 	z-index: 1;
 	top: -80px;
@@ -360,7 +385,7 @@ body {
 
 
 .seccion-1 {
-    border-top: 4px solid red;
+    border-top: 4px solid #ff0000;
     width: 100%;
     height: 130px;
     background: #141414;
@@ -427,14 +452,14 @@ body {
     padding: 5px;
 }
 .send button:hover {
-    background: red;
+    background: #ff0000;
 }
   
     
 
 /*media querys */
 
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 900px) {
     body {
         padding-top: 160px;
     }
@@ -447,7 +472,7 @@ body {
     }
     .header {
         position: fixed;
-        background: black;
+        background: #000000;
         z-index: 10;
         top: 0;
     }
@@ -464,9 +489,7 @@ body {
 
     }
     .scroll {
-        width: 1000px;
         overflow-x: scroll;
-        justify-content: start;
     }
     .article {
         flex-direction: column;
