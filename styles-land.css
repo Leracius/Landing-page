@@ -435,6 +435,9 @@ body {
 /*media querys */
 
 @media only screen and (max-width: 500px) {
+    body {
+        padding-top: 160px;
+    }
     .psico-world {
         margin-top: 2em;
         width: 200px;
@@ -442,11 +445,19 @@ body {
     .name-axel {
        margin: 0;
     }
+    .header {
+        position: fixed;
+        background: black;
+        z-index: 10;
+        top: 0;
+    }
     .navbar {
         display: flex;
         flex-direction: row;
         width: 100%;
-
+        position: fixed;
+        z-index: 10;
+        top: 96px;
     }
     .dropdown {
         width: 50%;
