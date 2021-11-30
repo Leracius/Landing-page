@@ -442,6 +442,7 @@ body {
     .scroll {
         width: 1000px;
         overflow-x: scroll;
+        justify-content: flex-end;
     }
     .article {
         flex-direction: column;
