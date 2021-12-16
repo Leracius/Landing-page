@@ -1,0 +1,3 @@
+add .article flex-direction: column;
+
+cmabiar el ancho definido del elemento article para agregar el elemento aside que va a contener imagenes editadas de mis mejores trabajos con css

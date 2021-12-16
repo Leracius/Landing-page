@@ -100,6 +100,7 @@ body {
     justify-content: flex-end;
     border-bottom: 5px solid #ff0000;
     
+
 }
 
 .dropbtn {
@@ -173,6 +174,7 @@ body {
     display: flex;
     justify-content: start;
 }
+
 .galery {
     padding: 10px 0 10px 0;
     display: flex;
@@ -251,7 +253,7 @@ body {
 .card:hover .back-card {
     transform: perspective(500px) rotateY(360deg);
 }
-/* CARDS Nº: the class name "f" is for front, "b" for back and number is for the number of card */
+/* CARDS Nº: the class name "f" is for front and number is for the number of card */
 .f-1 {
     background-image: url(https://i.pinimg.com/736x/16/bd/b5/16bdb53e088470ab1b1dfe4ed4cd3d22.jpg);
 }
@@ -290,13 +292,15 @@ body {
 .article {
     margin: 20px 20px;
     display: flex;
+    align-items: flex-end;
+    flex-direction: column;
     justify-content: space-around;
 }
 
 .card-container {
     background-color: #242424;
     display: flex;
-    width: 33.3%;
+    width: 75%;
     justify-content: space-between;
     font-family: 'Nunito';
     color: #fff8dc;
@@ -306,6 +310,7 @@ body {
 .child-container {
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
     margin: 1em;
     overflow: hidden;
 }
@@ -328,9 +333,15 @@ body {
 .complejo-edipo {
     background-image: url(./asets/complejo-de-edipo-1_opt.jpg);
 }
-.text-card {
-    min-height: 150px;
-    max-height: 700px;
+.text-card p {
+    margin: 1em;
+    color: hsl(0, 0%, 100%);
+}
+.text-card h1{
+    background-color: #141414;
+    text-align: center;
+    font-size: 30px;
+    color: hsl(45, 100%, 76%)
 }
 .botonerapadre {
     display: flex;
@@ -497,6 +508,9 @@ body {
     }
     .card-container {
         width: 100%;
+    }
+    .text-card h1 {
+        font-size: 25px;
     }
     .botonerapadre {
         margin-bottom: 20px;
