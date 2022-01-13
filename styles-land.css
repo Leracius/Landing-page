@@ -397,7 +397,9 @@ aside h1{
     font-size: 30px;
     color: hsl(45, 100%, 76%)
 }
-
+ul {
+    margin-right: 1em;
+}
 
 /*footer*/
 
@@ -589,7 +591,8 @@ aside h1{
     }
     
     .child-container {
-        margin: 10px 0 10px 0;
+        margin:  5px 5px 0 5px;
+        border-top: 4px solid red;
     }
     .seccion-2 {
         flex-direction: column;
